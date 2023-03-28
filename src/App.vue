@@ -1,34 +1,40 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
 	<header>
-		<!-- <img
-			alt="Vue logo"
-			class="logo"
-			src="@/assets/logo.svg"
-			width="125"
-			height="125"
-		/> -->
-
 		<div class="wrapper">
-			<!-- <HelloWorld msg="You did it!" /> -->
+			<div class="q-gutters-sm">
+				<h2>Guillaume</h2>
+				<h2 class="text-indigo-8">CHEKHAB</h2>
+			</div>
 
-			<h1>Guillaume Chekhab</h1>
-			github linkedin
+			<div class="q-ma-sm">
+				<a class="q-px-sm q-py-xs" href="https://github.com/GuillaumeChk"
+					>GitHub</a
+				>
+			</div>
+			<div class="q-ma-sm">
+				<a
+					class="q-px-sm q-py-xs"
+					href="https://www.linkedin.com/in/guillaumechekhab/"
+					>Linkedin</a
+				>
+			</div>
 
 			<nav>
-				<RouterLink to="/">Parcours</RouterLink>
-				<RouterLink to="/about">Projets</RouterLink>
-				<RouterLink to="/about">Compétences</RouterLink>
-				<RouterLink to="/about">Ambitions</RouterLink>
+				<RouterLink to="/">Accueil</RouterLink>
+				<RouterLink to="/parcours">Parcours</RouterLink>
+				<RouterLink to="/competences">Compétences</RouterLink>
+				<RouterLink to="/motivations">Motivations</RouterLink>
 			</nav>
 		</div>
 	</header>
 
-	<RouterView />
+	<div class="q-py-xl">
+		<RouterView />
+	</div>
 </template>
 
 <style scoped>
@@ -44,7 +50,7 @@ header {
 
 nav {
 	width: 100%;
-	font-size: 12px;
+	/* font-size: 12px; */
 	text-align: center;
 	margin-top: 2rem;
 }
