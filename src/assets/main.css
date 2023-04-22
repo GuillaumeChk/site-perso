@@ -3,19 +3,46 @@
 #app {
 	margin: 0 auto;
 	padding: 2rem;
+	min-height: 100vh;
 
 	font-weight: normal;
 }
-/* 
-a,
-.green {
-	text-decoration: none;
-	color: cyan;
-	transition: 0.4s;
+
+.wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+	position: relative;
 }
 
-@media (hover: hover) {
-	a:hover {
-		background-color: hsla(160, 100%, 37%, 0.2);
+@media (min-width: 1024px) {
+	.wrapper {
+		max-width: 1300px;
+		margin: 0 auto;
+		position: relative;
+		width: calc(100% - 60px);
 	}
-} */
+}
+
+a {
+	text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #212121;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #4d4d4d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

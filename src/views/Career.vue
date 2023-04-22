@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<h2>Parcours professionnel et scolaire</h2>
+		<!-- <h3>Parcours professionnel et scolaire</h3> -->
 
-		<q-timeline color="secondary" layout="comfortable">
+		<q-timeline color="blue" layout="comfortable">
 			<q-timeline-entry heading> Aujourd'hui </q-timeline-entry>
 
 			<q-timeline-entry
@@ -34,7 +34,7 @@ Lyon"
 
 			<q-timeline-entry
 				title="Développeur web
-OpenClassrooms · Stage / formation"
+OpenClassrooms · Stage / formation Bac+2"
 				subtitle="juin 2021 - nov. 2021 · 6 mois ·
 Besançon"
 				icon="school"

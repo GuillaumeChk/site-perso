@@ -1,102 +1,54 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-</script>
-
 <template>
 	<header>
 		<div class="wrapper">
-			<div class="q-gutters-sm">
-				<h2>Guillaume</h2>
-				<h2 class="text-indigo-8">CHEKHAB</h2>
-			</div>
+			<Top />
 
-			<div class="q-ma-sm">
-				<a class="q-px-sm q-py-xs" href="https://github.com/GuillaumeChk"
-					>GitHub</a
-				>
-			</div>
-			<div class="q-ma-sm">
-				<a
-					class="q-px-sm q-py-xs"
-					href="https://www.linkedin.com/in/guillaumechekhab/"
-					>Linkedin</a
-				>
-			</div>
-
-			<nav>
+			<q-tabs v-model="tab" no-caps dense align="justify" class="text-white">
+				<q-route-tab name="home" exact to="/">
+					<span class="gt-sm biggerText roundLeftCorner">Acceuil</span>
+					<span class="lt-md roundLeftCorner">Acceuil</span>
+				</q-route-tab>
+				<q-route-tab name="career" exact to="/parcours">
+					<span class="gt-sm biggerText">Parcours</span>
+					<span class="lt-md">Parcours</span>
+				</q-route-tab>
+				<q-route-tab name="skills" exact to="/competences">
+					<span class="gt-sm biggerText">Compétences</span>
+					<span class="lt-md">Compétences</span>
+				</q-route-tab>
+				<q-route-tab name="motivations" exact to="/motivations">
+					<span class="gt-sm biggerText">Réalisations</span>
+					<span class="lt-md">Réalisations</span>
+				</q-route-tab>
+			</q-tabs>
+		</div>
+		<!-- <nav>
 				<RouterLink to="/">Accueil</RouterLink>
 				<RouterLink to="/parcours">Parcours</RouterLink>
 				<RouterLink to="/competences">Compétences</RouterLink>
 				<RouterLink to="/motivations">Motivations</RouterLink>
-			</nav>
-		</div>
+			</nav> -->
 	</header>
 
-	<div class="q-py-xl">
+	<div class="q-py-xl wrapper">
 		<RouterView />
 	</div>
 </template>
 
+<script setup lang="ts">
+import { ref } from "vue";
+import { RouterLink, RouterView } from "vue-router";
+import Top from "./components/Top.vue";
+let tab = ref("unique");
+</script>
+
 <style scoped>
-header {
-	line-height: 1.5;
-	max-height: 100vh;
-}
-
-.logo {
-	display: block;
-	margin: 0 auto 2rem;
-}
-
 nav {
-	width: 100%;
-	/* font-size: 12px; */
-	text-align: center;
-	margin-top: 2rem;
+	width: max-content;
+	display: flex;
 }
 
-nav a.router-link-exact-active {
-	color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-	background-color: transparent;
-}
-
-nav a {
-	display: inline-block;
-	padding: 0 1rem;
-	border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-	border: 0;
-}
-
-@media (min-width: 1024px) {
-	header {
-		display: flex;
-		place-items: center;
-		padding-right: calc(var(--section-gap) / 2);
-	}
-
-	.logo {
-		margin: 0 2rem 0 0;
-	}
-
-	header .wrapper {
-		display: flex;
-		place-items: flex-start;
-		flex-wrap: wrap;
-	}
-
-	nav {
-		text-align: left;
-		margin-left: -1rem;
-		font-size: 1rem;
-
-		padding: 1rem 0;
-		margin-top: 1rem;
-	}
+.roundLeftCorner {
+	border-start-end-radius: 50px;
 }
 </style>
