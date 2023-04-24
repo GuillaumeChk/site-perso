@@ -1,23 +1,16 @@
 <template>
 	<div class="row justify-between">
-		<div class="q-gutters-sm q-my-lg">
-			<h2
-				class="text-italic text-bold q-mb-md"
-				style="transform: scale(1, 0.9)"
-			>
-				Guillaume C
-			</h2>
-			<h5 class="q-ml-sm q-pb-xs text-purple-3">
-				Développement de sites Web sur mesure
-			</h5>
-			<span class="q-ml-sm text-purple-2">
-				Vitrine • Boutique • Hotel/réservation • Personnalisation
+		<div class="column q-my-lg">
+			<h1 class="q-mb-sm title">Guillaume C</h1>
+			<h3 class="title2">Développement de sites Web</h3>
+			<span class="q-ml-sm title3">
+				Vitrine • Boutique • Hotel/réservation • Sur mesure
 			</span>
 		</div>
 
 		<div class="row">
 			<div class="column justify-center">
-				<q-btn size="xl" style="max-height: 4em">Contact</q-btn>
+				<btn style="max-height: 4em">Contact</btn>
 			</div>
 		</div>
 	</div>
@@ -31,3 +24,20 @@
 		>
 	</div> -->
 </template>
+
+<style>
+.title {
+	font-size: 90px;
+	/* transform: scale(1, 0.9); */
+}
+
+.title2 {
+	font-size: 35px;
+	letter-spacing: 0.01em;
+}
+
+.title3 {
+	font-size: 18px;
+	letter-spacing: 0.1em;
+}
+</style>

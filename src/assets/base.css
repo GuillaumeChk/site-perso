@@ -58,27 +58,18 @@
 	position: relative;
 	font-weight: normal;
 	line-height: 1.6;
-	font-size: 17px;
+	font-size: 21px;
 	letter-spacing: 0.05em;
+	font-family: "Quicksand", "Montserrat", serif;
 }
 
 body {
 	min-height: 100vh;
 	/* color: var(--color-text); */
 	/* background: var(--color-background); */
-	color: rgb(211, 211, 211);
-	background-image: linear-gradient(
-		to bottom,
-		#000029,
-		#19001f,
-		#210015,
-		#22030b,
-		#1f0a05
-	);
+	color: whitesmoke;
+	background-image: linear-gradient(to bottom, #0f4590, #040645);
 	transition: color 0.5s, background-color 0.5s;
-	font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-		sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

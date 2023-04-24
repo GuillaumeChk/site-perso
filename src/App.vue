@@ -1,12 +1,18 @@
 <template>
 	<header>
 		<div class="wrapper">
-			<Top />
+			<Top class="q-mb-sm" />
 
-			<q-tabs v-model="tab" no-caps dense align="justify" class="text-white">
+			<q-tabs
+				v-model="tab"
+				no-caps
+				dense
+				align="justify"
+				class="text-white tabs"
+			>
 				<q-route-tab name="home" exact to="/">
-					<span class="gt-sm biggerText roundLeftCorner">Acceuil</span>
-					<span class="lt-md roundLeftCorner">Acceuil</span>
+					<span class="gt-sm biggerText">Réalisations</span>
+					<span class="lt-md">Réalisations</span>
 				</q-route-tab>
 				<q-route-tab name="career" exact to="/parcours">
 					<span class="gt-sm biggerText">Parcours</span>
@@ -15,10 +21,6 @@
 				<q-route-tab name="skills" exact to="/competences">
 					<span class="gt-sm biggerText">Compétences</span>
 					<span class="lt-md">Compétences</span>
-				</q-route-tab>
-				<q-route-tab name="motivations" exact to="/motivations">
-					<span class="gt-sm biggerText">Réalisations</span>
-					<span class="lt-md">Réalisations</span>
 				</q-route-tab>
 			</q-tabs>
 		</div>
@@ -48,7 +50,7 @@ nav {
 	display: flex;
 }
 
-.roundLeftCorner {
-	border-start-end-radius: 50px;
+.tabs {
+	border: 1px solid whitesmoke;
 }
 </style>
