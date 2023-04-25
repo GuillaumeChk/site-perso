@@ -1,10 +1,14 @@
 <template>
 	<div class="row justify-between">
 		<div class="column q-my-lg">
-			<h1 class="q-mb-sm title">Guillaume C</h1>
+			<h1 class="q-mb-sm title">
+				Guillaume C<span style="font-family: 'Montserrat'; font-size: 50px">
+					.</span
+				>
+			</h1>
 			<h3 class="title2">Développement de sites Web</h3>
 			<span class="q-ml-sm title3">
-				Vitrine • Boutique • Hotel/réservation • Sur mesure
+				Vitrine — Boutique — Hotel — Sur mesure
 			</span>
 		</div>
 

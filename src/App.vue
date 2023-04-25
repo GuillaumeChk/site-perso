@@ -1,7 +1,7 @@
 <template>
 	<header>
 		<div class="wrapper">
-			<Top class="q-mb-sm" />
+			<Top class="q-mb-lg" />
 
 			<q-tabs
 				v-model="tab"
@@ -11,16 +11,16 @@
 				class="text-white tabs"
 			>
 				<q-route-tab name="home" exact to="/">
-					<span class="gt-sm biggerText">Réalisations</span>
-					<span class="lt-md">Réalisations</span>
+					<span class="gt-sm biggerText tab">Réalisations</span>
+					<span class="lt-md tab">Réalisations</span>
 				</q-route-tab>
 				<q-route-tab name="career" exact to="/parcours">
-					<span class="gt-sm biggerText">Parcours</span>
-					<span class="lt-md">Parcours</span>
+					<span class="gt-sm biggerText tab">Parcours</span>
+					<span class="lt-md tab">Parcours</span>
 				</q-route-tab>
 				<q-route-tab name="skills" exact to="/competences">
-					<span class="gt-sm biggerText">Compétences</span>
-					<span class="lt-md">Compétences</span>
+					<span class="gt-sm biggerText tab">Compétences</span>
+					<span class="lt-md tab">Compétences</span>
 				</q-route-tab>
 			</q-tabs>
 		</div>
@@ -52,5 +52,11 @@ nav {
 
 .tabs {
 	border: 1px solid whitesmoke;
+}
+
+.tab {
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 1px;
 }
 </style>

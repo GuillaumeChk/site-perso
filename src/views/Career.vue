@@ -3,7 +3,9 @@
 		<!-- <h3>Parcours professionnel et scolaire</h3> -->
 
 		<q-timeline color="blue" layout="comfortable">
-			<q-timeline-entry heading> Aujourd'hui </q-timeline-entry>
+			<q-timeline-entry heading>
+				<h4>Aujourd'hui</h4>
+			</q-timeline-entry>
 
 			<q-timeline-entry
 				title="Développeur web · Freelance"
