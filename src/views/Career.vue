@@ -2,10 +2,17 @@
 	<div style="width: 100%" class="wrapper q-gutter-y-lg">
 		<NavBar />
 		<!-- <h3>Parcours professionnel et scolaire</h3> -->
-
-		<div class="text-center" style="overflow-wrap: anywhere">
-			<q-icon name="email" />  
-			<a href="mailto:info@desfees.fr">guillaume.chekhab39@gmail.com</a>
+		<div class="q-gutter-md text-center">
+			<a target="_blank" href="https://www.linkedin.com/in/guillaumechekhab/"
+				><q-icon name="img:src/assets/linkedin.svg"
+			/></a>
+			<a target="_blank" href="https://github.com/GuillaumeChk"
+				><q-icon name="img:src/assets/github.svg"
+			/></a>
+			<div class="text-center" style="overflow-wrap: anywhere">
+				<q-icon name="email" />  
+				<a href="mailto:info@desfees.fr">guillaume.chekhab39@gmail.com</a>
+			</div>
 		</div>
 
 		<q-timeline color="blue" :layout="layout">

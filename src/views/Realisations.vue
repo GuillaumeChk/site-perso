@@ -4,7 +4,9 @@
 		<!-- <h4 class="text-light appear-left">Réalisations</h4> -->
 
 		<q-timeline :layout="layout" color="blue">
-			<q-timeline-entry heading> Réalisations </q-timeline-entry>
+			<q-timeline-entry heading>
+				<h5>Réalisations</h5>
+			</q-timeline-entry>
 
 			<q-timeline-entry title="Chambres d'hôtes & gîte" subtitle="2022">
 				<div class="no-wrap justify-between">
