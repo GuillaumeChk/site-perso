@@ -1,9 +1,10 @@
 <template>
-	<div class="column q-gutter-lg">
-		<h4 class="text-light appear-left">Réalisations</h4>
+	<div class="wrapper q-gutter-y-lg" style="width: 100%">
+		<NavBar />
+		<!-- <h4 class="text-light appear-left">Réalisations</h4> -->
 
 		<q-timeline layout="comfortable" color="blue">
-			<!-- <q-timeline-entry heading> Réalisations </q-timeline-entry> -->
+			<q-timeline-entry heading> Réalisations </q-timeline-entry>
 
 			<q-timeline-entry title="Chambres d'hôtes & gîte" subtitle="2022">
 				<div class="row no-wrap text-no-wrap justify-between">
@@ -77,6 +78,10 @@
 		</a> -->
 	</div>
 </template>
+
+<script setup>
+import NavBar from "../components/NavBar.vue";
+</script>
 
 <style>
 .card {

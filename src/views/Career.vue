@@ -1,10 +1,11 @@
 <template>
-	<div>
+	<div style="width: 100%" class="wrapper q-gutter-y-lg">
+		<NavBar />
 		<!-- <h3>Parcours professionnel et scolaire</h3> -->
 
 		<q-timeline color="blue" layout="comfortable">
 			<q-timeline-entry heading>
-				<h4>Aujourd'hui</h4>
+				<h5>Mon parcours</h5>
 			</q-timeline-entry>
 
 			<q-timeline-entry
@@ -13,11 +14,10 @@
 				icon="emoji_people"
 			>
 				<div>
-					Diverses missions courtes. Une mission longue : Développement d'un
-					site de chambres d'hôtes avec son sytème de réservation personnalisé
-					(et agenda) et implémentation d'un système de paiement (avec Stripe).
-					Voir le site
-					<a href="https://www.desfees.fr">Domaine des Fées</a>
+					Diverses missions courtes. <br />
+					Une mission longue : Développement d'un site de chambres d'hôtes avec
+					son sytème de réservation personnalisé (et agenda) et implémentation
+					d'un système de paiement (avec Stripe). Voir réalisations
 				</div>
 			</q-timeline-entry>
 
@@ -29,8 +29,8 @@ Lyon"
 				icon="work"
 			>
 				<div>
-					Développement de l'ATS et de la plate-forme candidat Technos : Vue.js,
-					Nuxt.js et Node.js Typescript
+					Développement de l'ATS et de la plate-forme candidat <br />
+					Technos : Vue.js, Nuxt.js et Node.js Typescript
 				</div>
 			</q-timeline-entry>
 
@@ -67,8 +67,8 @@ Besançon"
 			>
 				<div>
 					Développement de 2 jeux vidéo pour mobile (avec Unreal Engine et
-					Unity) en autodidacte de A à Z. Cf section Projets ci-dessous ou via
-					MistyPineStudio.com
+					Unity) en autodidacte de A à Z. <br />
+					Cf MistyPineStudio.com
 				</div>
 			</q-timeline-entry>
 
@@ -91,5 +91,9 @@ Besançon"
 		</q-timeline>
 	</div>
 </template>
+
+<script setup>
+import NavBar from "../components/NavBar.vue";
+</script>
 
 <style></style>

@@ -38,7 +38,7 @@
 .wrapper {
 	max-width: 1300px;
 	margin: 0 auto;
-	padding: 20px;
+	/* padding: 20px; */
 	position: relative;
 }
 
@@ -59,21 +59,19 @@ a {
 /* width */
 ::-webkit-scrollbar {
 	width: 7px;
-	height: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: transparent;
+	background: #212121;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #eee;
-	border-radius: 10px;
+	background: #4d4d4d;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #e3e3e3;
+	background: #555;
 }
