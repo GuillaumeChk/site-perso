@@ -21,11 +21,6 @@
 					fit="cover"
 					style="border-radius: 25px; height: 300px; width: 200px"
 				></q-img>
-				<q-img
-					src="src/assets/Capture_OC_2.jpg"
-					fit="cover"
-					style="border-radius: 25px; width: 530px; height: 300px"
-				></q-img>
 			</div>
 		</div>
 	</div>

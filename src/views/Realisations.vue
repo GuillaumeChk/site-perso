@@ -8,8 +8,15 @@
 				<h5>Réalisations</h5>
 			</q-timeline-entry>
 
-			<q-timeline-entry title="Chambres d'hôtes & gîte" subtitle="2022">
+			<q-timeline-entry title="Chambres d'hôtes & gîte" subtitle="2023">
 				<div class="no-wrap justify-between">
+					<a
+						style="text-decoration: underline"
+						href="http://www.desfees.fr"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Voir le site</a
+					>
 					<ul class="q-px-xl q-pb-xl q-pt-md">
 						<li>Réservations</li>
 						<li>Agenda</li>
@@ -18,7 +25,7 @@
 						<li>Facture automatique</li>
 					</ul>
 					<a
-						href="https://guillaumechk.github.io/site-desfees/"
+						href="https://www.desfees.fr"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="justify-center card"
@@ -33,27 +40,50 @@
 				</div>
 			</q-timeline-entry>
 
-			<q-timeline-entry title="Chambres d'hôtes & gîte" subtitle="2022">
+			<q-timeline-entry title="Hébergement (design seulement)" subtitle="2022">
 				<div class="no-wrap justify-between">
+					<a style="text-decoration: underline" href="">Voir le site</a>
 					<ul class="q-px-xl q-pb-xl q-pt-md">
-						<li>Réservations</li>
-						<li>Agenda</li>
-						<li>Coffrets cadeaux</li>
-						<li>Mail</li>
-						<li>Facture automatique</li>
+						<li>Pur css</li>
+						<li>Flex & grid</li>
+						<li>Responsive</li>
+						<li>Aspect visuel uniquement</li>
+						<li>dans le cadre de ma formation OC</li>
 					</ul>
 					<a
-						href="https://guillaumechk.github.io/site-desfees/"
+						href="https://guillaumechk.github.io/GuillaumeChekhab_2_18062021/"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="justify-center card"
 					>
 						<q-img
-							src="src/assets/Capture_site_desfees.jpg"
+							src="src/assets/Capture_OC_2.jpg"
 							fit="cover"
-							style="width: 500px; max-width: 100%"
-						>
-						</q-img>
+							style="width: 530px; max-width: 100%"
+						></q-img>
+					</a>
+				</div>
+			</q-timeline-entry>
+
+			<q-timeline-entry title="Hébergement (design seulement)" subtitle="2022">
+				<div class="no-wrap justify-between">
+					<a style="text-decoration: underline" href="">Voir le site</a>
+					<ul class="q-px-xl q-pb-xl q-pt-md">
+						<li>Animations CSS</li>
+						<li>pour Mobile</li>
+						<li>dans le cadre de ma formation OC</li>
+					</ul>
+					<a
+						href="https://guillaumechk.github.io/GuillaumeChekhab_3_06072020/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="justify-center card"
+					>
+						<q-img
+							src="src/assets/Capture_OC_3.jpg"
+							fit="cover"
+							style="border-radius: 25px; height: 450px; width: 200px"
+						></q-img>
 					</a>
 				</div>
 			</q-timeline-entry>
