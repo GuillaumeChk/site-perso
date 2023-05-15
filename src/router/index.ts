@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Realisations from "../views/Realisations.vue";
+// import Realisations from "../views/Realisations.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +7,7 @@ const router = createRouter({
 		{
 			path: "/",
 			name: "home",
-			component: Realisations,
+			// component: Realisations,
 		},
 		{
 			path: "/parcours",

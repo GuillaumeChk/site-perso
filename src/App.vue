@@ -1,53 +1,102 @@
 <template>
-	<header>
-		<div class="wrapper">
-			<Top class="q-mb-lg" />
+	<div class="column justify-evenly box">
+		<div>
+			<Top />
 
-			<q-tabs
-				v-model="tab"
-				no-caps
-				dense
-				align="justify"
-				class="text-white tabs"
-			>
-				<q-route-tab name="home" exact to="/">
-					<span class="gt-sm biggerText tab">Réalisations</span>
-					<span class="lt-md tab">Réalisations</span>
-				</q-route-tab>
-				<q-route-tab name="career" exact to="/parcours">
-					<span class="gt-sm biggerText tab">Parcours</span>
-					<span class="lt-md tab">Parcours</span>
-				</q-route-tab>
-				<q-route-tab name="skills" exact to="/competences">
-					<span class="gt-sm biggerText tab">Compétences</span>
-					<span class="lt-md tab">Compétences</span>
-				</q-route-tab>
-			</q-tabs>
+			<nav class="row justify-center q-gutter-xl">
+				<RouterLink style="letter-spacing: 0.1em" to="/parcours"
+					>réalisations</RouterLink
+				>
+				<RouterLink style="letter-spacing: 0.1em" to="/competences"
+					>compétences</RouterLink
+				>
+				<RouterLink style="letter-spacing: 0.1em" to="/motivations"
+					>à propos</RouterLink
+				>
+			</nav>
 		</div>
-		<!-- <nav>
-				<RouterLink to="/">Accueil</RouterLink>
-				<RouterLink to="/parcours">Parcours</RouterLink>
-				<RouterLink to="/competences">Compétences</RouterLink>
-				<RouterLink to="/motivations">Motivations</RouterLink>
-			</nav> -->
-	</header>
 
-	<div class="q-py-xl wrapper">
-		<RouterView />
+		<div class="scroll-box">
+			<div class="row inline no-wrap q-gutter-xl">
+				<q-img
+					src="src/assets/Capture_site_desfees.jpg"
+					fit="cover"
+					style="border-radius: 30px; width: 460px; height: 300px"
+				></q-img>
+				<q-img
+					src="src/assets/Capture_OC_2.jpg"
+					fit="cover"
+					style="border-radius: 30px; width: 530px; height: 300px"
+				></q-img>
+				<q-img
+					src="src/assets/Capture_OC_3.jpg"
+					fit="cover"
+					style="border-radius: 30px; height: 300px; width: 200px"
+				></q-img>
+				<q-img
+					src="src/assets/Capture_OC_2.jpg"
+					fit="cover"
+					style="border-radius: 30px; width: 530px; height: 300px"
+				></q-img>
+			</div>
+		</div>
 	</div>
+
+	<!-- <div class="q-py-xl">
+		<RouterView />
+	</div> -->
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import Top from "./components/Top.vue";
+
 let tab = ref("unique");
+
+onMounted(() => {
+	// Animate on scroll (when visible)
+	const inViewport = (entries, observer) => {
+		entries.forEach((entry) => {
+			entry.target.classList.toggle("show", entry.isIntersecting);
+		});
+	};
+
+	const Observer = new IntersectionObserver(inViewport);
+	let options = {
+		root: null,
+		rootMargin: "0px",
+		threshold: 1,
+	};
+
+	// Attach observer to every [data-inviewport] element:
+	const Elements_inViewport = document.querySelectorAll(
+		".appear-left, .appear-right, .appear-bottom"
+	);
+	Elements_inViewport.forEach((element) => {
+		Observer.observe(element, options);
+	});
+});
 </script>
 
 <style scoped>
 nav {
-	width: max-content;
+	/* width: max-content;
+	display: flex; */
+}
+
+.box {
 	display: flex;
+	width: 100%;
+}
+
+.scroll-box {
+	height: 300px;
+	width: 80%;
+	overflow-x: scroll;
+	margin: 0 auto;
+
+	background-color: red;
 }
 
 .tabs {

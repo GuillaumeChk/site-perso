@@ -1,6 +1,6 @@
 <template>
 	<div class="column q-gutter-lg">
-		<h4 class="text-light">Réalisations</h4>
+		<h4 class="text-light appear-left">Réalisations</h4>
 
 		<q-timeline layout="comfortable" color="blue">
 			<!-- <q-timeline-entry heading> Réalisations </q-timeline-entry> -->
