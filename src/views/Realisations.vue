@@ -3,12 +3,12 @@
 		<NavBar />
 		<!-- <h4 class="text-light appear-left">Réalisations</h4> -->
 
-		<q-timeline layout="comfortable" color="blue">
+		<q-timeline :layout="layout" color="blue">
 			<q-timeline-entry heading> Réalisations </q-timeline-entry>
 
 			<q-timeline-entry title="Chambres d'hôtes & gîte" subtitle="2022">
-				<div class="row no-wrap text-no-wrap justify-between">
-					<ul class="q-pa-xl">
+				<div class="no-wrap justify-between">
+					<ul class="q-px-xl q-pb-xl q-pt-md">
 						<li>Réservations</li>
 						<li>Agenda</li>
 						<li>Coffrets cadeaux</li>
@@ -19,7 +19,7 @@
 						href="https://guillaumechk.github.io/site-desfees/"
 						target="_blank"
 						rel="noopener noreferrer"
-						class="row justify-center card"
+						class="justify-center card"
 					>
 						<q-img
 							src="src/assets/Capture_site_desfees.jpg"
@@ -32,20 +32,27 @@
 			</q-timeline-entry>
 
 			<q-timeline-entry title="Chambres d'hôtes & gîte" subtitle="2022">
-				<div class="row no-wrap text-no-wrap justify-between">
-					<ul class="q-pa-xl">
+				<div class="no-wrap justify-between">
+					<ul class="q-px-xl q-pb-xl q-pt-md">
 						<li>Réservations</li>
 						<li>Agenda</li>
 						<li>Coffrets cadeaux</li>
 						<li>Mail</li>
 						<li>Facture automatique</li>
 					</ul>
-					<q-img
-						src="src/assets/Capture_site_desfees.jpg"
-						fit="cover"
-						style="width: 500px; max-width: 100%"
+					<a
+						href="https://guillaumechk.github.io/site-desfees/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="justify-center card"
 					>
-					</q-img>
+						<q-img
+							src="src/assets/Capture_site_desfees.jpg"
+							fit="cover"
+							style="width: 500px; max-width: 100%"
+						>
+						</q-img>
+					</a>
 				</div>
 			</q-timeline-entry>
 		</q-timeline>
@@ -81,6 +88,14 @@
 
 <script setup>
 import NavBar from "../components/NavBar.vue";
+import { useQuasar } from "quasar";
+import { computed } from "vue";
+
+const $q = useQuasar();
+
+let layout = computed(() => {
+	return $q.screen.lt.sm ? "dense" : "comfortable";
+});
 </script>
 
 <style>

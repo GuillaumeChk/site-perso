@@ -1,7 +1,10 @@
 <template>
-	<div class="title text-center">Guillaume C</div>
+	<div class="gt-xs title text-center">Guillaume C</div>
+	<div class="lt-sm text-center q-pb-md" style="font-size: 35px">
+		Guillaume C
+	</div>
 
-	<nav class="row justify-center q-gutter-xl">
+	<nav class="row justify-center q-gutter-y-none q-gutter-x-xl">
 		<RouterLink style="letter-spacing: 0.1em" to="/realisations"
 			>réalisations</RouterLink
 		>

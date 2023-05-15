@@ -3,7 +3,12 @@
 		<NavBar />
 		<!-- <h3>Parcours professionnel et scolaire</h3> -->
 
-		<q-timeline color="blue" layout="comfortable">
+		<div class="text-center" style="overflow-wrap: anywhere">
+			<q-icon name="email" />  
+			<a href="mailto:info@desfees.fr">guillaume.chekhab39@gmail.com</a>
+		</div>
+
+		<q-timeline color="blue" :layout="layout">
 			<q-timeline-entry heading>
 				<h5>Mon parcours</h5>
 			</q-timeline-entry>
@@ -94,6 +99,14 @@ Besançon"
 
 <script setup>
 import NavBar from "../components/NavBar.vue";
+import { useQuasar } from "quasar";
+import { computed } from "vue";
+
+const $q = useQuasar();
+
+let layout = computed(() => {
+	return $q.screen.lt.sm ? "dense" : "comfortable";
+});
 </script>
 
 <style></style>

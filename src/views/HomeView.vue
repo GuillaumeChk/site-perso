@@ -72,11 +72,16 @@ onMounted(() => {
 
 .scroll-box {
 	height: 325px;
-	width: 80%;
+	width: 100%;
 	overflow-x: scroll;
 	overflow-y: auto;
-	margin: 0 auto;
 	margin-top: 5px;
+}
+@media (min-width: 1024px) {
+	.scroll-box {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 .tabs {
