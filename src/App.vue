@@ -1,5 +1,5 @@
 <template>
-	<div class="column justify-evenly box">
+	<div class="column justify-evenly main-box">
 		<div>
 			<Top />
 
@@ -85,18 +85,18 @@ nav {
 	display: flex; */
 }
 
-.box {
+.main-box {
 	display: flex;
 	width: 100%;
 }
 
 .scroll-box {
-	height: 300px;
+	height: 325px;
 	width: 80%;
 	overflow-x: scroll;
+	overflow-y: auto;
 	margin: 0 auto;
-
-	background-color: red;
+	margin-top: 5px;
 }
 
 .tabs {
