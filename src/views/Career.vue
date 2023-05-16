@@ -4,10 +4,10 @@
 		<!-- <h3>Parcours professionnel et scolaire</h3> -->
 		<div class="q-gutter-md text-center">
 			<a target="_blank" href="https://www.linkedin.com/in/guillaumechekhab/"
-				><q-icon name="img:src/assets/linkedin.svg"
+				><img src="@/assets/linkedin.svg" style="width: 21px; height: 21px"
 			/></a>
 			<a target="_blank" href="https://github.com/GuillaumeChk"
-				><q-icon name="img:src/assets/github.svg"
+				><img src="@/assets/github.svg" style="width: 21px; height: 21px"
 			/></a>
 			<div class="text-center" style="overflow-wrap: anywhere">
 				<q-icon name="email" />  

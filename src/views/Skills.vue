@@ -35,7 +35,7 @@
 						<img
 							alt="Javascript logo"
 							class="logo"
-							src="src/assets/Unofficial_JavaScript_logo_2.svg"
+							src="@/assets/Unofficial_JavaScript_logo_2.svg"
 							width="125"
 							height="125"
 						/>
@@ -46,7 +46,7 @@
 						<img
 							alt="Javascript logo"
 							class="logo"
-							src="src/assets/Typescript_logo_2020.svg"
+							src="@/assets/Typescript_logo_2020.svg"
 							width="125"
 							height="125"
 						/>
@@ -57,7 +57,7 @@
 						<img
 							alt="Node logo"
 							class="logo"
-							src="src/assets/Node.js_logo.svg"
+							src="@/assets/Node.js_logo.svg"
 							width="125"
 							height="125"
 						/>
@@ -67,7 +67,7 @@
 						<img
 							alt="Node logo"
 							class="logo"
-							src="src/assets/MySQL.svg"
+							src="@/assets/MySQL.svg"
 							width="125"
 							height="125"
 						/>
@@ -78,7 +78,7 @@
 						<img
 							alt="Node logo"
 							class="logo"
-							src="src/assets/Git_icon.svg"
+							src="@/assets/Git_icon.svg"
 							width="125"
 							height="125"
 						/>
@@ -89,7 +89,7 @@
 						<img
 							alt="Node logo"
 							class="logo"
-							src="src/assets/Sass_Logo_Color.svg"
+							src="@/assets/Sass_Logo_Color.svg"
 							width="125"
 							height="125"
 						/>
@@ -100,7 +100,7 @@
 						<img
 							alt="Node logo"
 							class="logo"
-							src="src/assets/HTML5_logo_and_wordmark.svg"
+							src="@/assets/HTML5_logo_and_wordmark.svg"
 							width="125"
 							height="125"
 						/>
@@ -111,7 +111,7 @@
 						<img
 							alt="Node logo"
 							class="logo"
-							src="src/assets/CSS3_logo_and_wordmark.svg"
+							src="@/assets/CSS3_logo_and_wordmark.svg"
 							width="125"
 							height="125"
 						/>
@@ -121,7 +121,7 @@
 						<img
 							alt="Node logo"
 							class="logo"
-							src="src/assets/Bootstrap_logo.svg"
+							src="@/assets/Bootstrap_logo.svg"
 							width="125"
 							height="125"
 						/>
@@ -139,7 +139,7 @@
 						<img
 							alt="Unity logo"
 							class="logo"
-							src="src/assets/Unity_Technologies_logo.svg"
+							src="@/assets/Unity_Technologies_logo.svg"
 							width="125"
 						/>
 						<p class="text-center">Unity</p>
@@ -149,7 +149,7 @@
 						<img
 							alt="Unreal Engine logo"
 							class="logo"
-							src="src/assets/Unreal_Engine_Logo.svg"
+							src="@/assets/Unreal_Engine_Logo.svg"
 							width="125"
 							height="125"
 						/>
@@ -162,7 +162,7 @@
 </template>
 
 <script setup>
-import Skill from "../components/Skill.vue";
+// import Skill from "../components/Skill.vue";
 import NavBar from "../components/NavBar.vue";
 </script>
 

@@ -6,21 +6,21 @@
 
 		<div class="scroll-box">
 			<div class="row inline no-wrap q-gutter-xl">
-				<q-img
-					src="src/assets/Capture_site_desfees.jpg"
+				<img
+					src="@/assets/Capture_site_desfees.jpg"
 					fit="cover"
 					style="border-radius: 25px; width: 460px; height: 300px"
-				></q-img>
-				<q-img
-					src="src/assets/Capture_OC_2.jpg"
+				/>
+				<img
+					src="@/assets/Capture_OC_2.jpg"
 					fit="cover"
 					style="border-radius: 25px; width: 530px; height: 300px"
-				></q-img>
-				<q-img
-					src="src/assets/Capture_OC_3.jpg"
+				/>
+				<img
+					src="@/assets/Capture_OC_3.jpg"
 					fit="cover"
 					style="border-radius: 25px; height: 300px; width: 200px"
-				></q-img>
+				/>
 			</div>
 		</div>
 	</div>
@@ -34,29 +34,29 @@ import NavBar from "../components/NavBar.vue";
 
 let tab = ref("unique");
 
-onMounted(() => {
-	// Animate on scroll (when visible)
-	const inViewport = (entries, observer) => {
-		entries.forEach((entry) => {
-			entry.target.classList.toggle("show", entry.isIntersecting);
-		});
-	};
+// onMounted(() => {
+// 	// Animate on scroll (when visible)
+// 	const inViewport = (entries: any, observer: any) => {
+// 		entries.forEach((entry: any) => {
+// 			entry.target.classList.toggle("show", entry.isIntersecting);
+// 		});
+// 	};
 
-	const Observer = new IntersectionObserver(inViewport);
-	let options = {
-		root: null,
-		rootMargin: "0px",
-		threshold: 1,
-	};
+// 	const Observer = new IntersectionObserver(inViewport);
+// 	let options = {
+// 		root: null,
+// 		rootMargin: "0px",
+// 		threshold: 1,
+// 	};
 
-	// Attach observer to every [data-inviewport] element:
-	const Elements_inViewport = document.querySelectorAll(
-		".appear-left, .appear-right, .appear-bottom"
-	);
-	Elements_inViewport.forEach((element) => {
-		Observer.observe(element, options);
-	});
-});
+// 	// Attach observer to every [data-inviewport] element:
+// 	const Elements_inViewport = document.querySelectorAll(
+// 		".appear-left, .appear-right, .appear-bottom"
+// 	);
+// 	Elements_inViewport.forEach((element) => {
+// 		Observer.observe(element, options);
+// 	});
+// });
 </script>
 
 <style scoped>

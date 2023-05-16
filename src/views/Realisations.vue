@@ -30,12 +30,11 @@
 						rel="noopener noreferrer"
 						class="justify-center card"
 					>
-						<q-img
-							src="src/assets/Capture_site_desfees.jpg"
+						<img
+							src="@/assets/Capture_site_desfees.jpg"
 							fit="cover"
 							style="width: 500px; max-width: 100%"
-						>
-						</q-img>
+						/>
 					</a>
 				</div>
 			</q-timeline-entry>
@@ -56,11 +55,11 @@
 						rel="noopener noreferrer"
 						class="justify-center card"
 					>
-						<q-img
-							src="src/assets/Capture_OC_2.jpg"
+						<img
+							src="@/assets/Capture_OC_2.jpg"
 							fit="cover"
 							style="width: 530px; max-width: 100%"
-						></q-img>
+						/>
 					</a>
 				</div>
 			</q-timeline-entry>
@@ -79,11 +78,11 @@
 						rel="noopener noreferrer"
 						class="justify-center card"
 					>
-						<q-img
-							src="src/assets/Capture_OC_3.jpg"
+						<img
+							src="@/assets/Capture_OC_3.jpg"
 							fit="cover"
 							style="border-radius: 25px; height: 450px; width: 200px"
-						></q-img>
+						/>
 					</a>
 				</div>
 			</q-timeline-entry>
@@ -108,12 +107,11 @@
 				</ul>
 			</div>
 
-			<q-img
-				src="src/assets/Capture_site_desfees.jpg"
+			<img
+				src="@/assets/Capture_site_desfees.jpg"
 				fit="cover"
 				style="width: 500px; max-width: 100%"
-			>
-			</q-img>
+			/>
 		</a> -->
 	</div>
 </template>
