@@ -31,7 +31,7 @@
 						class="justify-center card"
 					>
 						<img
-							src="@/assets/Capture_site_desfees.jpg"
+							src="../assets/Capture_site_desfees.jpg"
 							fit="cover"
 							style="width: 500px; max-width: 100%"
 						/>
@@ -56,7 +56,7 @@
 						class="justify-center card"
 					>
 						<img
-							src="@/assets/Capture_OC_2.jpg"
+							src="../assets/Capture_OC_2.jpg"
 							fit="cover"
 							style="width: 530px; max-width: 100%"
 						/>
@@ -79,7 +79,7 @@
 						class="justify-center card"
 					>
 						<img
-							src="@/assets/Capture_OC_3.jpg"
+							src="../assets/Capture_OC_3.jpg"
 							fit="cover"
 							style="border-radius: 25px; height: 450px; width: 200px"
 						/>
@@ -108,7 +108,7 @@
 			</div>
 
 			<img
-				src="@/assets/Capture_site_desfees.jpg"
+				src="../assets/Capture_site_desfees.jpg"
 				fit="cover"
 				style="width: 500px; max-width: 100%"
 			/>
@@ -134,7 +134,7 @@ let layout = computed(() => {
 	/* border: 1px solid whitesmoke; */
 }
 
-@media (min-width: 1024px) {
+..media (min-width: 1024px) {
 	.about {
 		/* min-height: 100vh; */
 		display: flex;
