@@ -1,6 +1,6 @@
 <template>
 	<div style="width: 100%" class="wrapper q-gutter-y-lg">
-		<NavBar />
+		<Navbar />
 		<!-- <h3>Parcours professionnel et scolaire</h3> -->
 		<div class="q-gutter-md text-center">
 			<a target="_blank" href="https://www.linkedin.com/in/guillaumechekhab/"
@@ -105,7 +105,7 @@ Besançon"
 </template>
 
 <script setup>
-import NavBar from "../components/NavBar.vue";
+import Navbar from "../components/Navbar.vue";
 import { useQuasar } from "quasar";
 import { computed } from "vue";
 

@@ -1,7 +1,7 @@
 <template>
 	<div class="column justify-evenly main-box">
 		<div>
-			<NavBar />
+			<Navbar />
 		</div>
 
 		<div class="scroll-box">
@@ -30,7 +30,7 @@
 import { onMounted, ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import Top from "../components/Top.vue";
-import NavBar from "../components/NavBar.vue";
+import Navbar from "../components/Navbar.vue";
 
 let tab = ref("unique");
 

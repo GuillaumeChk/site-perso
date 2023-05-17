@@ -1,6 +1,6 @@
 <template>
 	<div class="wrapper q-gutter-y-lg" style="width: 100%">
-		<NavBar />
+		<Navbar />
 		<!-- <h4 class="text-light appear-left">Réalisations</h4> -->
 
 		<q-timeline :layout="layout" color="blue">
@@ -117,7 +117,7 @@
 </template>
 
 <script setup>
-import NavBar from "../components/NavBar.vue";
+import Navbar from "../components/Navbar.vue";
 import { useQuasar } from "quasar";
 import { computed } from "vue";
 

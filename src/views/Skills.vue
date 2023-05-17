@@ -1,6 +1,6 @@
 <template>
 	<div style="width: 100%" class="wrapper q-gutter-y-lg">
-		<NavBar />
+		<Navbar />
 
 		<h5 class="text-center q-pb-lg">Compétences</h5>
 		<div class="q-gutter-y-xl text-center">
@@ -163,7 +163,7 @@
 
 <script setup>
 // import Skill from "../components/Skill.vue";
-import NavBar from "../components/NavBar.vue";
+import Navbar from "../components/Navbar.vue";
 </script>
 
 <style>
