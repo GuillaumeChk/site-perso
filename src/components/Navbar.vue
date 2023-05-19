@@ -17,6 +17,19 @@
 	</nav>
 </template>
 
+<script setup>
+import { onMounted } from "vue";
+
+// onMounted(() => {
+// 	setTimeout(() => {
+// 		var elements = document.getElementsByClassName("appear-left2");
+// 		for (var i = 0; i < elements.length; i++) {
+// 			elements[i].classList.add("show2");
+// 		}
+// 	}, "250");
+// });
+</script>
+
 <style scoped>
 .title {
 	font-size: 50px;

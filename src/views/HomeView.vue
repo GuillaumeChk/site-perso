@@ -1,10 +1,26 @@
 <template>
+	<Bubbles />
 	<div class="column justify-evenly main-box">
-		<div>
-			<Navbar />
+		<div class="appear-left2">
+			<div class="gt-xs title text-center">Guillaume C</div>
+			<div class="lt-sm text-center q-pb-md" style="font-size: 35px">
+				Guillaume C
+			</div>
+
+			<nav class="row justify-center q-gutter-y-none q-gutter-x-xl">
+				<RouterLink style="letter-spacing: 0.1em" to="/realisations"
+					>réalisations</RouterLink
+				>
+				<RouterLink style="letter-spacing: 0.1em" to="/competences"
+					>compétences</RouterLink
+				>
+				<RouterLink style="letter-spacing: 0.1em" to="/parcours"
+					>à propos</RouterLink
+				>
+			</nav>
 		</div>
 
-		<div class="scroll-box">
+		<div class="scroll-box appear-left2">
 			<div class="row inline no-wrap q-gutter-xl">
 				<img
 					src="@/assets/Capture_site_desfees.jpg"
@@ -31,32 +47,20 @@ import { onMounted, ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import Top from "../components/Top.vue";
 import Navbar from "../components/Navbar.vue";
+import Bubbles from "../components/Bubbles.vue";
 
 let tab = ref("unique");
 
-// onMounted(() => {
-// 	// Animate on scroll (when visible)
-// 	const inViewport = (entries: any, observer: any) => {
-// 		entries.forEach((entry: any) => {
-// 			entry.target.classList.toggle("show", entry.isIntersecting);
-// 		});
-// 	};
+onMounted(() => {
+	setTimeout(() => {
+		var elements2 = document.getElementsByClassName("appear-left2");
+		for (var i = 0; i < elements2.length; i++) {
+			elements2[i].classList.add("show2");
+		}
 
-// 	const Observer = new IntersectionObserver(inViewport);
-// 	let options = {
-// 		root: null,
-// 		rootMargin: "0px",
-// 		threshold: 1,
-// 	};
-
-// 	// Attach observer to every [data-inviewport] element:
-// 	const Elements_inViewport = document.querySelectorAll(
-// 		".appear-left, .appear-right, .appear-bottom"
-// 	);
-// 	Elements_inViewport.forEach((element) => {
-// 		Observer.observe(element, options);
-// 	});
-// });
+		// console.log("2");
+	}, 250);
+});
 </script>
 
 <style scoped>

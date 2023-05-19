@@ -3,7 +3,7 @@
 		<Navbar />
 		<!-- <h4 class="text-light appear-left">Réalisations</h4> -->
 
-		<q-timeline :layout="layout" color="blue">
+		<q-timeline :layout="layout" color="blue" class="appear-left3">
 			<q-timeline-entry heading>
 				<h5>Réalisations</h5>
 			</q-timeline-entry>
