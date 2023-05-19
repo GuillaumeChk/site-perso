@@ -1,10 +1,14 @@
 <template>
 	<RouterView />
+
+	<Bubbles />
 </template>
 
 <script setup>
 import { RouterView } from "vue-router";
 import { onMounted } from "vue";
+
+import Bubbles from "./components/Bubbles.vue";
 
 import { watch } from "vue";
 import { useRoute } from "vue-router";

@@ -1,5 +1,4 @@
 <template>
-	<Bubbles />
 	<div class="column justify-evenly main-box">
 		<div class="appear-left2">
 			<div class="gt-xs title text-center">Guillaume C</div>
@@ -47,7 +46,6 @@ import { onMounted, ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import Top from "../components/Top.vue";
 import Navbar from "../components/Navbar.vue";
-import Bubbles from "../components/Bubbles.vue";
 
 let tab = ref("unique");
 
