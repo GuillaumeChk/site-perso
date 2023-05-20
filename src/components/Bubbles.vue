@@ -16,26 +16,26 @@
 		<div class="snowflake"></div>
 		<div class="snowflake"></div>
 		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
-		<div class="snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
+		<div class="gt-xs snowflake"></div>
 	</div>
 </template>
 
@@ -88,24 +88,50 @@ onMounted(() => {
 @keyframes snowfall {
 	100% {
 		top: -50%;
-		opacity: 1;
+		opacity: 0.9;
 
 		left: 0%;
 	}
 	77% {
-		left: 3%;
+		left: 15%;
 	}
 	50% {
 		left: 0%;
 		opacity: 0.7;
 	}
 	33% {
-		left: -3%;
+		left: -15%;
 	}
 	0% {
 		top: 100%;
 		opacity: 0;
 		left: 0%;
+	}
+}
+
+@media (min-width: 480px) {
+	@keyframes snowfall {
+		100% {
+			top: -50%;
+			opacity: 1;
+
+			left: 0%;
+		}
+		77% {
+			left: 3%;
+		}
+		50% {
+			left: 0%;
+			opacity: 0.7;
+		}
+		33% {
+			left: -3%;
+		}
+		0% {
+			top: 100%;
+			opacity: 0;
+			left: 0%;
+		}
 	}
 }
 </style>

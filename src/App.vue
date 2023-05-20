@@ -18,7 +18,7 @@ const route = useRoute();
 watch(
 	() => route.fullPath,
 	() => {
-		console.log("route change");
+		// console.log("route change");
 
 		setTimeout(() => {
 			var elements3 = document.getElementsByClassName("appear-left3");

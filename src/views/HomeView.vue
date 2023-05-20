@@ -112,4 +112,37 @@ onMounted(() => {
 ::-webkit-scrollbar-thumb:hover {
 	background: #e3e3e3;
 }
+
+/* //Navbar */
+.title {
+	font-size: 50px;
+}
+
+a {
+	position: relative;
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+a::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	transform: scaleX(0);
+	transform-origin: top left;
+	transition: transform 0.3s ease;
+}
+
+a:hover::before {
+	transform: scaleX(1);
+}
 </style>

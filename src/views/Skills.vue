@@ -17,7 +17,7 @@
 								width="125"
 								height="125"
 							/>
-							<p class="text-center">Vue.js</p>
+							<p class="text-center">Vue</p>
 						</div>
 
 						<!-- <div class="column col justify-center q-gutter-sm">
@@ -62,7 +62,7 @@
 								width="125"
 								height="125"
 							/>
-							<p class="text-center">Node.js</p>
+							<p class="text-center">Node</p>
 						</div>
 						<div class="logo-skill-bg">
 							<img
@@ -164,7 +164,6 @@
 </template>
 
 <script setup>
-// import Skill from "../components/Skill.vue";
 import Navbar from "../components/Navbar.vue";
 </script>
 
@@ -179,6 +178,6 @@ import Navbar from "../components/Navbar.vue";
 .logo-skill-bg img {
 	padding: 10px;
 	border-radius: 20px;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 </style>
