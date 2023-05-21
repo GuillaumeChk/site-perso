@@ -5,15 +5,15 @@
 	</div>
 
 	<nav class="row justify-center q-gutter-y-none q-gutter-x-xl">
-		<RouterLink style="letter-spacing: 0.1em" to="/realisations"
-			>réalisations</RouterLink
-		>
-		<RouterLink style="letter-spacing: 0.1em" to="/competences"
-			>compétences</RouterLink
-		>
-		<RouterLink style="letter-spacing: 0.1em" to="/parcours"
-			>à propos</RouterLink
-		>
+		<RouterLink style="letter-spacing: 0.1em" to="/realisations">{{
+			$t("navbar.achievement")
+		}}</RouterLink>
+		<RouterLink style="letter-spacing: 0.1em" to="/competences">{{
+			$t("navbar.skills")
+		}}</RouterLink>
+		<RouterLink style="letter-spacing: 0.1em" to="/parcours">{{
+			$t("navbar.about")
+		}}</RouterLink>
 	</nav>
 </template>
 

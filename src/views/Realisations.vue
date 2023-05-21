@@ -5,25 +5,25 @@
 
 		<q-timeline :layout="layout" color="blue" class="appear-left3">
 			<q-timeline-entry heading>
-				<h5>Réalisations</h5>
+				<h5 class="text-capitalize">{{ $t("navbar.achievement") }}</h5>
 			</q-timeline-entry>
 
-			<q-timeline-entry title="Chambres d'hôtes & gîte" subtitle="2023">
+			<q-timeline-entry
+				:title="$t('achievement.t1')"
+				:subtitle="$t('achievement.d1')"
+			>
 				<div class="no-wrap justify-between">
 					<a
 						style="text-decoration: underline"
 						href="http://www.desfees.fr"
 						target="_blank"
 						rel="noopener noreferrer"
-						>Voir le site</a
+						>{{ $t("achievement.website") }}</a
 					>
-					<ul class="q-px-xl q-pb-xl q-pt-md">
-						<li>Réservations</li>
-						<li>Agenda</li>
-						<li>Coffrets cadeaux</li>
-						<li>Mail</li>
-						<li>Facture automatique</li>
-					</ul>
+					<ul
+						class="q-px-xl q-pb-xl q-pt-md"
+						v-html="$t('achievement.p1')"
+					></ul>
 					<a
 						href="https://www.desfees.fr"
 						target="_blank"
@@ -39,16 +39,18 @@
 				</div>
 			</q-timeline-entry>
 
-			<q-timeline-entry title="Hébergement (design seulement)" subtitle="2022">
+			<q-timeline-entry
+				:title="$t('achievement.t2')"
+				:subtitle="$t('achievement.d2')"
+			>
 				<div class="no-wrap justify-between">
-					<a style="text-decoration: underline" href="">Voir le site</a>
-					<ul class="q-px-xl q-pb-xl q-pt-md">
-						<li>Pur css</li>
-						<li>Flex & grid</li>
-						<li>Responsive</li>
-						<li>Aspect visuel uniquement</li>
-						<li>dans le cadre de ma formation OC</li>
-					</ul>
+					<a style="text-decoration: underline" href="">{{
+						$t("achievement.website")
+					}}</a>
+					<ul
+						class="q-px-xl q-pb-xl q-pt-md"
+						v-html="$t('achievement.p2')"
+					></ul>
 					<a
 						href="https://guillaumechk.github.io/GuillaumeChekhab_2_18062021/"
 						target="_blank"
@@ -64,14 +66,18 @@
 				</div>
 			</q-timeline-entry>
 
-			<q-timeline-entry title="Hébergement (design seulement)" subtitle="2022">
+			<q-timeline-entry
+				:title="$t('achievement.t3')"
+				:subtitle="$t('achievement.d3')"
+			>
 				<div class="no-wrap justify-between">
-					<a style="text-decoration: underline" href="">Voir le site</a>
-					<ul class="q-px-xl q-pb-xl q-pt-md">
-						<li>Animations CSS</li>
-						<li>pour Mobile</li>
-						<li>dans le cadre de ma formation OC</li>
-					</ul>
+					<a style="text-decoration: underline" href="">{{
+						$t("achievement.website")
+					}}</a>
+					<ul
+						class="q-px-xl q-pb-xl q-pt-md"
+						v-html="$t('achievement.p3')"
+					></ul>
 					<a
 						href="https://guillaumechk.github.io/GuillaumeChekhab_3_06072020/"
 						target="_blank"

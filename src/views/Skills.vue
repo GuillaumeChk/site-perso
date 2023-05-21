@@ -3,7 +3,9 @@
 		<Navbar />
 
 		<div class="appear-left3">
-			<h5 class="text-center q-pb-lg">Compétences</h5>
+			<h5 class="text-center q-pb-lg text-capitalize">
+				{{ $t("navbar.skills") }}
+			</h5>
 			<div class="q-gutter-y-xl text-center">
 				<h6>Web</h6>
 

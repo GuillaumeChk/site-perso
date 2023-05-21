@@ -3,7 +3,7 @@
 		<Navbar />
 
 		<div class="appear-left3">
-			<div class="q-gutter-md text-center">
+			<div class="q-gutter-md q-pt-md text-center">
 				<a target="_blank" href="https://www.linkedin.com/in/guillaumechekhab/"
 					><img src="../assets/linkedin.svg" style="width: 21px; height: 21px"
 				/></a>
@@ -16,91 +16,62 @@
 				</div>
 			</div>
 
-			<q-timeline color="blue" :layout="layout">
+			<q-timeline class="q-pt-xl" color="blue" :layout="layout">
 				<q-timeline-entry heading>
-					<h5>Mon parcours</h5>
+					<h5>{{ $t("about.title") }}</h5>
 				</q-timeline-entry>
 
 				<q-timeline-entry
-					title="Développeur web · Freelance"
-					subtitle="sept. 2022 - déc 2022 · 4 mois (temps partiel)"
+					:title="$t('about.t1')"
+					:subtitle="$t('about.d1')"
 					icon="emoji_people"
 				>
 					<div>
-						Diverses missions courtes. <br />
-						Une mission longue : Développement d'un site de chambres d'hôtes
-						avec son sytème de réservation personnalisé (et agenda) et
-						implémentation d'un système de paiement (avec Stripe). Voir
-						réalisations
+						{{ $t("about.p1") }}
 					</div>
 				</q-timeline-entry>
-
 				<q-timeline-entry
-					title="Développeur web front-end
-Skilder · Stage"
-					subtitle="janv. 2022 - mai 2022 · 5 mois · 
-Lyon"
+					:title="$t('about.t2')"
+					:subtitle="$t('about.d2')"
 					icon="work"
 				>
 					<div>
-						Développement de l'ATS et de la plate-forme candidat <br />
-						Technos : Vue.js, Nuxt.js et Node.js Typescript
+						{{ $t("about.p2") }}
 					</div>
 				</q-timeline-entry>
-
 				<q-timeline-entry
-					title="Développeur web
-OpenClassrooms · Stage / formation Bac+2"
-					subtitle="juin 2021 - nov. 2021 · 6 mois ·
-Besançon"
+					:title="$t('about.t3')"
+					:subtitle="$t('about.d3')"
 					icon="school"
 				>
-					<ul>
-						<li>
-							Création d'un réseau social d'entreprise (Single-page application)
-							avec Vue.js et Node.js et implémentation de base de donnée
-							relationnelle avec SQL.
-						</li>
-						<li>
-							Création d'une API sécurisée pour une application d'avis
-							gastronomiques (backend) aux normes de l'OWASP avec Node.js.
-						</li>
-						<li>Création d'un site e-commerce avec JavaScript.</li>
-						<li>Optimisation d'un site web existant (SEO et accessibilité).</li>
-						<li>
-							Implémentation d'une version mobile au design responsive d'un site
-							web avec des animations CSS.
-						</li>
-					</ul>
+					<ul v-html="$t('about.p3')"></ul>
 				</q-timeline-entry>
-
 				<q-timeline-entry
-					title="Création de 2 jeux vidéo en indépendant"
-					subtitle="août 2020 - mai 2021 · 10 mois"
+					:title="$t('about.t4')"
+					:subtitle="$t('about.d4')"
 					icon="sports_esports"
 				>
 					<div>
-						Développement de 2 jeux vidéo pour mobile (avec Unreal Engine et
-						Unity) en autodidacte de A à Z. <br />
-						Cf MistyPineStudio.com
+						{{ $t("about.p4") }}
 					</div>
 				</q-timeline-entry>
-
 				<q-timeline-entry
-					title="Université de Franche-Comté"
-					subtitle="2018 - 2020 · 2 ans"
+					:title="$t('about.t5')"
+					:subtitle="$t('about.d5')"
 					icon="school"
 				>
-					<div>2 ans de licence Informatique</div>
+					<div>
+						{{ $t("about.p5") }}
+					</div>
 				</q-timeline-entry>
-
 				<q-timeline-entry
-					title="Classe préparatoire aux écoles d'ingénieurs (CPGE)"
-					subtitle="2016 - 2018 · 2 ans"
+					:title="$t('about.t6')"
+					:subtitle="$t('about.d6')"
 					icon="school"
 				>
-					<div>PTSI Physique, Technologie et Sciences de l'ingénieur</div>
-					<div>Lycée Jules Haag - Besançon</div>
+					<div>
+						{{ $t("about.p6") }}
+					</div>
 				</q-timeline-entry>
 			</q-timeline>
 		</div>
