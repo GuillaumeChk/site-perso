@@ -39,7 +39,6 @@
 			</div>
 		</div>
 	</div>
-	<q-btn class="langToggle" @click="toggleLanguage()">lang</q-btn>
 </template>
 
 <script setup lang="ts">
@@ -47,20 +46,6 @@ import { onMounted, ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import Top from "../components/Top.vue";
 import Navbar from "../components/Navbar.vue";
-
-let tab = ref("unique");
-
-import { useI18n } from "vue-i18n";
-
-const { t, locale } = useI18n({ useScope: "global" });
-
-const toggleLanguage = () => {
-	if (locale.value === "fr") {
-		locale.value = "en";
-	} else {
-		locale.value = "fr";
-	}
-};
 
 onMounted(() => {
 	setTimeout(() => {
@@ -75,10 +60,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.langToggle {
-	position: fixed;
-	bottom: 10px;
-}
 .main-box {
 	display: flex;
 	width: 100%;

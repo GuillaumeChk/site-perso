@@ -2,13 +2,15 @@
 	<RouterView />
 
 	<Bubbles />
+	<LangSwitch />
 </template>
 
 <script setup>
 import { RouterView } from "vue-router";
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 
 import Bubbles from "./components/Bubbles.vue";
+import LangSwitch from "./components/LangSwitch.vue";
 
 import { watch } from "vue";
 import { useRoute } from "vue-router";

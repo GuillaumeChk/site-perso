@@ -88,19 +88,20 @@ onMounted(() => {
 @keyframes snowfall {
 	100% {
 		top: -50%;
-		opacity: 0.9;
+		opacity: 0;
 
 		left: 0%;
 	}
 	77% {
 		left: 15%;
+		opacity: 0.6;
 	}
 	50% {
 		left: 0%;
-		opacity: 0.7;
 	}
 	33% {
 		left: -15%;
+		opacity: 0.15;
 	}
 	0% {
 		top: 100%;
@@ -113,19 +114,19 @@ onMounted(() => {
 	@keyframes snowfall {
 		100% {
 			top: -50%;
-			opacity: 1;
-
+			opacity: 0;
 			left: 0%;
 		}
 		77% {
 			left: 3%;
+			opacity: 0.6;
 		}
 		50% {
 			left: 0%;
-			opacity: 0.7;
 		}
 		33% {
 			left: -3%;
+			opacity: 0.15;
 		}
 		0% {
 			top: 100%;
